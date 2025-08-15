@@ -1,0 +1,55 @@
+resume-bot/
+├── .env.local
+├── .gitignore
+├── next.config.mjs
+├── package.json
+├── postcss.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+│
+├── prisma/
+│   ├── migrations/
+│   └── schema.prisma
+│
+├── public/
+│   ├── icons/
+│   └── images/
+│
+└── src/
+    ├── app/
+    │   ├── api/
+    │   │   └── optimize/
+    │   │       └── route.ts        # API to CREATE the optimization job
+    │   │
+    │   ├── builder/
+    │   │   └── [id]/               # Dynamic route for a specific job
+    │   │       └── page.tsx        # **THE BUILDER/PLAYGROUND PAGE**
+    │   │
+    │   ├── upload/
+    │   │   └── page.tsx            # **THE UPLOAD PAGE**
+    │   │
+    │   ├── layout.tsx              # Root layout (nav, footer)
+    │   └── page.tsx                # **THE LANDING/HOME PAGE**
+    │
+    ├── components/
+    │   ├── ui/                     # Shadcn UI components
+    │   └── custom/
+    │       ├── landing/            # Components specific to the landing page
+    │       │   ├── HeroSection.tsx
+    │       │   └── Features.tsx
+    │       ├── upload/
+    │       │   └── UploadForm.tsx    # Client component for upload, role input, and API call
+    │       └── builder/
+    │           ├── BuilderClient.tsx # Main client component for the playground
+    │           ├── EditorView.tsx    # To view/edit the optimized text
+    │           ├── KeywordChart.tsx  # ApexCharts component
+    │           └── DownloadButtons.tsx
+    │
+    ├── lib/
+    │   ├── db.ts
+    │   ├── openai.ts
+    │   ├── utils.ts
+    │   └── parsers.ts
+    │
+    └── types/
+        └── index.ts

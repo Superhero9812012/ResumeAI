@@ -1,0 +1,245 @@
+---
+alwaysApply: true
+---
+
+Scope of Work (SOW) – ResumeBot.co.in 
+Revamp
+1. Project Overview
+ResumeBot.co.in is an AI-powered resume building and optimization platform that helps users 
+create and improve resumes tailored to specific job roles. This revamp will transform the 
+platform into a world-class AI Resume Assistant with advanced AI integrations, modern 
+UI/UX, and career tools including ATS scoring, keyword optimization, and shortlisting 
+prediction.
+2. Objectives
+• Redesign UI/UX for a faster, cleaner, and more engaging user experience.
+• Implement AI-powered resume parsing & optimization.
+• Add job description-based tailoring for higher shortlisting chances.
+• Integrate ATS scoring engine to evaluate resume compatibility.
+• Offer premium templates and export options.
+• Monetize via subscription/pay-per-use payment gateway.
+3. Functional Scope
+3.1 Resume Upload & Shortlisting Prediction – Detailed Workflow
+Step 1 – Resume Upload
+• User logs in / signs up.
+• User uploads an existing resume in PDF or DOCX format.
+• AI-powered resume parser extracts:
+o Personal details (name, contact)
+o Career summary
+o Work experience (with dates)
+o Education
+o Skills
+o Achievements & certifications
+Step 2 – Job Description Input
+• User pastes or uploads the job description of the role they are targeting.
+• System auto-detects:
+o Role title
+o Key skills & keywords
+o Required experience & qualifications
+Step 3 – AI Analysis & ATS Matching
+• AI compares the parsed resume against the job description.
+• Scoring parameters:
+o Keyword Match % (skills, job-specific terms)
+o Experience Alignment % (years, industry match)
+o Education & Certification Relevance
+o Formatting & ATS Friendliness
+• Generates:
+o ATS Score (out of 100)
+o Shortlisting Chance: High / Medium / Low
+o Gaps Identified: Missing keywords, incomplete sections, weak phrasing
+Step 4 – AI Suggestions
+• Recommendations on:
+o Adding missing keywords
+o Rewriting weak job descriptions
+o Improving summary & achievements
+• User can click "Apply Suggestions" for instant AI rewriting.
+Step 5 – Payment Gateway Integration (Trigger Point)
+• Free Tier Users:
+o Can view basic ATS score & 3 suggestions.
+o Full detailed report + AI rewrite → requires payment.
+• Premium Users:
+o Unlimited scans & AI rewrites.
+o All templates unlocked.
+Payment Gateway Flow:
+1. User clicks "Unlock Full Report".
+2. Redirect to Payment Gateway Page (Paypal/EaseBuzz India ).
+3. User chooses:
+o One-time scan
+o Monthly subscription
+4. On successful payment:
+o Full AI-enhanced resume is generated.
+o User can download PDF/DOCX or save in account.
+Step 6 – Final Output
+• Export in selected template with AI enhancements applied.
+• Show Before/After comparison for transparency.
+• Save report in user dashboard for future access.
+3.2 Additional Features
+(Same as before but keeping AI upload-check focus in mind)
+• Resume Builder from scratch with AI writing assistant.
+• Cover Letter Generator.
+• Multi-language support.
+• Analytics Dashboard (User & Admin).
+• Template Library with 15+ premium designs.
+• Job Matching API (future phase).
+4. Technical Scope
+• Frontend: Next.js / React with Tailwind CSS.
+• Backend: Node.js / Django REST API.
+• AI/NLP: OpenAI GPT-4/5, custom ATS scoring algorithms.
+• Document Processing: Python-docx, PDFKit.
+• Payment Gateway: Razorpay for India, Stripe/PayPal for international.
+• Hosting: AWS / Vercel.
+5. Deliverables
+1. Fully functional resume upload & ATS scoring engine.
+2. Job description parsing & AI gap analysis.
+3. Payment gateway integration linked to unlocking full reports.
+4. Admin dashboard for tracking payments & reports.
+5. Mobile-responsive UI.
+3.1 Resume Upload & Shortlisting Prediction – Detailed 
+Workflow (Updated)
+Step 1 – Resume Upload
+• User logs in / signs up.
+• User uploads an existing resume (PDF/DOCX).
+• AI-powered parser extracts personal details, work history, education, skills, certifications, 
+and achievements.
+Step 2 – Job Description Input
+• User pastes or uploads the target job description.
+• System identifies:
+o Role title
+o Required skills & keywords
+o Experience & qualification requirements
+Step 3 – AI Analysis & ATS Matching
+• AI compares the parsed resume with the job description.
+• Generates:
+o ATS Score (out of 100)
+o Shortlisting Chance (High / Medium / Low)
+o Gaps Identified (missing skills, incomplete sections, weak phrasing)
+Step 4 – AI Suggestions
+• AI recommends:
+o Missing keywords to add
+o Rewriting certain sections
+o Improving summary & achievements
+• User can apply suggestions instantly or make manual edits.
+Step 5 – Template Selection
+• User is shown available resume templates:
+o Free tier: limited templates
+o Premium tier: all templates unlocked
+• Templates are categorized:
+o Professional
+o Creative
+o Minimal
+o Industry-specific (IT, Legal, Marketing, etc.)
+• User selects preferred template for final download.
+• Preview Mode: Shows live preview of AI-enhanced resume in the chosen design.
+Step 6 – Payment Gateway Trigger
+• Free Tier Users:
+o Can preview with watermark & limited suggestions.
+o To download in chosen template without watermark → payment required.
+• Premium Users:
+o Directly proceed to download (no payment step).
+• Payment process:
+1. Click "Download Without Watermark" or "Unlock Premium".
+2. Redirect to payment gateway (Razorpay for India, Stripe/PayPal for 
+international).
+3. Choose:
+§ One-time payment
+§ Monthly/annual subscription
+4. On success → watermark removed & premium features unlocked.
+Step 7 – Final Download & Storage
+• Resume generated in selected template (PDF & DOCX).
+• User can:
+o Download instantly
+o Save in dashboard for future edits
+o Email/share via direct link
+• Before/After AI comparison available in dashboard.
+Step 8 – Post-Download User Engagement
+• Prompt user to:
+o Generate a cover letter for the same job
+o Tailor for another job description
+o Share feedback/review
+Workflow: Resume Shortlisting Chances → 
+Optimize Resume
+Phase A — Input & Parsing
+A1. Upload Resume
+• User: Uploads PDF/DOCX (drag & drop or file picker).
+• System:
+o Virus scan & file validation (size, type).
+o Parse with resume parser → extract: header, summary, experience, education, 
+skills, certifications, projects, links.
+o Normalize into schema (e.g., JSON Resume-like).
+A2. Paste Job Description (JD)
+• User: Pastes JD text or uploads JD file / job URL.
+• System:
+o JD parser → detect role, seniority, must-have and nice-to-have skills, 
+responsibilities, location, keywords, qualifications.
+A3. Quality Gates & Pre-Checks
+• Show inline warnings if:
+o Resume missing dates/companies/education.
+o JD too short/ambiguous (<200 chars).
+• User can fix or continue (with warnings).
+Phase B — Matching & Shortlisting Report
+B1. Alignment Analysis
+• Inputs: Parsed Resume + Parsed JD.
+• System computes:
+o Keyword coverage (exact, stemmed, synonyms).
+o Experience alignment (years, role titles, domain, tools).
+o Education/certification match.
+o ATS safety (layout, sectioning, fonts, tables, columns).
+o Gaps (missing skills, metrics, domain terms).
+B2. Scores & Labels
+• Outputs:
+o ATS Score (0–100) with sub-scores: Content, Structure, Keywords, Readability.
+o Shortlisting Chance: High / Medium / Low (with thresholds, e.g., >80 High, 60–
+80 Medium, <60 Low).
+o Keyword Coverage: e.g., 19/25 matched (list missing).
+o Risk Flags: date gaps, job hopping, long paragraphs, passive wording.
+o Impact Meter: % of bullets quantified; action verbs ratio.
+B3. Detailed Report (Human-Readable)
+• Sections:
+1. Executive Summary (scores + quick wins)
+2. Missing & Weak Keywords (priority ranked)
+3. Experience Fit (which roles align / misalign)
+4. Bullet Quality Review (verbosity, metrics, action verbs)
+5. Formatting/ATS Issues (tables, headers/footers, icons)
+6. Education/Cert Fit
+7. Top 5 Fixes to move from X → Y score
+• CTA: “Start Optimization” (begins Phase C).
+(Free tier: show high-level report; Premium: full detail with examples and auto-fixes.)
+Phase C — Optimize Resume (Interactive Loop)
+C1. Template Selection + Live Editable Preview
+• User selects a template (Free: limited & watermarked; Premium: all).
+• Resume renders in chosen template with editable sections (WYSIWYG).
+• Autosave + versioning enabled.
+C2. Embedded AI Suggestions (Context-Aware)
+• Right panel (AI assistant) + inline chips:
+o “Rewrite selected bullet to be concise/impactful/ATS-safe.”
+o “Insert missing keywords relevant to this JD.”
+o “Quantify this bullet with metrics.”
+o “Convert responsibilities → achievements.”
+• One-click Apply keeps formatting style.
+C3. Real-Time Re-Scoring
+• After each edit (debounced 2–3s):
+o Recalculate Keyword Coverage, ATS Score, and Shortlisting Chance.
+o Show delta badge (e.g., “+7 after last changes”).
+o “View Gaps” button highlights unresolved issues.
+C4. Section-Level Optimizers
+• Summary Optimizer: generate 3 variants aligned to JD.
+• Experience Optimizer:
+o Suggests role-specific bullets (STAR framework), power verbs, KPIs.
+o Dedupe repetitive bullets across roles.
+• Skills Optimizer:
+o Recommends ordering & grouping; add synonyms that ATS recognizes.
+• Formatting Fixer:
+o Removes tables/multi-columns/icons not ATS-safe; normalizes headings.
+C5. Payment Gate (if not Premium)
+• Actions that trigger paywall:
+o Export without watermark (PDF/DOCX).
+o Full detailed report download.
+o Unlimited AI rewrites / premium templates.
+• Flow: Download/Unlock → Razorpay/Stripe/PayPal → return → features unlocked.
+C6. Export & Save
+• Export PDF (pixel-perfect) & DOCX (editable).
+• Save snapshot (content schema + template) to reopen identically.
+• Optional share link (expiry configurable).
+C7. Post-Optimization Prompts
+• “Generate job-specific cover letter.”
+• “Create second version for adjacent role.”
+• “Enable job-match alerts with this resume (future phase).”
